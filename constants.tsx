@@ -1,41 +1,41 @@
 import { SideNavItem } from "./types";
 import { GoHome } from "react-icons/go";
 import { RiPagesLine } from "react-icons/ri";
-import { IoSettingsOutline } from "react-icons/io5";
-import {
-  MdOutlineExplore,
-  MdOutlineFavoriteBorder,
-  MdOutlineViewTimeline,
-} from "react-icons/md";
+import { MdExplore, MdFavorite, MdOutlineViewTimeline } from "react-icons/md";
+import { FaHome } from "react-icons/fa";
+import { TbTimelineEventFilled } from "react-icons/tb";
+import { RiPagesFill } from "react-icons/ri";
+import { IoMdSettings } from "react-icons/io";
+
 export const SIDENAV_ITEMS: SideNavItem[] = [
   {
     title: "Home",
     path: "/",
-    icon: <GoHome height={24} width={24} />,
+    icon: <FaHome className="h-5 w-5" />,
   },
   {
     title: "Blogs",
     path: "/blogs",
-    icon: <RiPagesLine height={24} width={24} />,
+    icon: <RiPagesFill className="h-5 w-5" />,
   },
   {
     title: "Explore",
     path: "/explore",
-    icon: <MdOutlineExplore height={24} width={24} />,
+    icon: <MdExplore className="h-5 w-5" />,
   },
   {
     title: "Favorites",
     path: "/favorites",
-    icon: <MdOutlineFavoriteBorder height={24} width={24} />,
+    icon: <MdFavorite className="h-5 w-5" />,
   },
   {
     title: "Timeline",
     path: "/timeline",
-    icon: <MdOutlineViewTimeline height={24} width={24} />,
+    icon: <TbTimelineEventFilled className="h-5 w-5" />,
   },
   {
     title: "Settings",
     path: "/settings",
-    icon: <IoSettingsOutline height={24} width={24} />,
+    icon: <IoMdSettings className="h-5 w-5" />,
   },
 ];
