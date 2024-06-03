@@ -1,8 +1,9 @@
 "use client";
 
 import React from "react";
-
+import JournalIt from "../public/JournalIt.png";
 import Link from "next/link";
+import Image from "next/image";
 import { useSelectedLayoutSegment } from "next/navigation";
 
 import useScroll from "@/hooks/use-scroll";
@@ -27,8 +28,8 @@ const Header = () => {
             href="/"
             className="flex flex-row space-x-3 items-center justify-center md:hidden"
           >
-            <span className="h-7 w-7 bg-zinc-300 rounded-lg" />
-            <span className="font-bold text-xl flex">Logo</span>
+            <Image src={JournalIt} alt="logo image" width={7} height={7} />
+            <span className="font-bold text-xl flex">Journal It</span>
           </Link>
         </div>
         <div className="hidden md:block">
