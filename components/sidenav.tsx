@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import JournalIt from "../public/JournalIt.png";
 import { usePathname } from "next/navigation";
 
 import { SIDENAV_ITEMS } from "@/constants";
@@ -16,8 +18,8 @@ const SideNav = () => {
           href="/"
           className={`flex flex-row space-x-3 items-center justify-center md:justify-start md:px-6 border-b border-zinc-200 h-12 w-full`}
         >
-          <span className="h-7 w-7 bg-zinc-300 rounded-lg" />
-          <span className="font-bold text-xl hidden md:flex">Logo</span>
+          <Image src={JournalIt} alt="logo image" width={25} height={25} />
+          <span className="font-bold text-xl hidden md:flex">Journal It</span>
         </Link>
         <div className="flex flex-col space-y-2 md:px-6">
           {SIDENAV_ITEMS.map((item, idx) => {
